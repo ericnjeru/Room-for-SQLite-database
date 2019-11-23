@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3">
+
+                <TextView
+                    android:layout_width="240px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5px"
+                    android:text="Title:"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                     />
+
+                <TextView
+                    android:layout_width="240px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5px"
+                    android:text="Subject:"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    />
+
+                <TextView
+                    android:layout_width="240px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5px"
+                    android:text="Body:"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                     />
+
+                <TextView
+                    android:id="@+id/textViewNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Go Bring Eggs"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewSubj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bring 6 eggs from super market"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5pm today"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+            </GridLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
